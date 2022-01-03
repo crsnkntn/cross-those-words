@@ -1,0 +1,3 @@
+wordbank/wordbank1.txt
+wordbank/wordbank2.txt
+wordbank/wordbank3.txt
