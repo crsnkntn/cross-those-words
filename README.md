@@ -1,5 +1,5 @@
 # Crossword Generator
-For each wordbank*.txt file, the "main" executable will generate a crossword and word search
+For each file in word_bank.txt, this code will generate a crossword and word search.
 
 ## Example
 ### Word Bank
