@@ -1,8 +1,9 @@
 #include "crossword.h"
+#include "crossword.cpp"
 
 int main () {
     size_t crossword_size = 30;
-    ScrabbleBot::Crossword2D crossword_maker(crossword_size);
+    Crossword2D crossword_maker(crossword_size);
     std::ifstream files("word_bank.txt");
     std::string file_name;
     while (files >> file_name) {
@@ -11,7 +12,7 @@ int main () {
         crossword_maker.new_file(file_name);
         auto v = crossword_maker.generate_a_crossword();
         auto v_w = v;
-        ScrabbleBot::convert_to_word_search(v_w);
+        convert_to_word_search(v_w);
         for (int row = 0; row < v.size(); ++row) {
             for (int col = 0; col < v[row].size(); ++col) {
                 fout_c << v[row][col] << ' ';
